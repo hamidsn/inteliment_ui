@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/back_layout"
+    tools:context=".MainActivity">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+            <include layout="@layout/horizontal_scrollview"
+                app:layout_widthPercent="100%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/languages_scroll"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"/>
+
+
+            <inteliment.h_sed.example.com.ilteliment.ClickableViewPager
+                android:id="@+id/clickable_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/languages_scroll"
+                app:layout_widthPercent="100%"
+                app:layout_heightPercent="25%"/>
+
+
+            <include layout="@layout/textview_aligned"
+                android:id="@+id/aligned_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clickable_viewpager"
+                app:layout_widthPercent="100%"
+                app:layout_heightPercent="25%"/>
+
+
+            <TextView
+                android:id="@+id/fourthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aligned_text"
+                app:layout_widthPercent="100%"
+                app:layout_heightPercent="12%"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/choose_lan"/>
+
+            <include
+                android:id="@+id/buttons"
+                layout="@layout/button_layour"
+                app:layout_widthPercent="100%"
+                app:layout_heightPercent="25%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fourthText"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/alakiscrol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lang"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_less_margin"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageButton
+                    android:id="@+id/item_English"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="ENGLISH"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/btn_default_holo_light"
+                    android:src="@drawable/gb"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+                <ImageButton
+                    android:id="@+id/item_French"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="FRENCH"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/btn_default_holo_light"
+                    android:src="@drawable/fr"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+                <ImageButton
+                    android:id="@+id/item_Chinese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="CHINESE"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/btn_default_holo_light"
+                    android:src="@drawable/cn"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+                <ImageButton
+                    android:id="@+id/item_Espain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="SPANISH"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/btn_default_holo_light"
+                    android:src="@drawable/es"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+                <ImageButton
+                    android:id="@+id/item_German"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="GERMAN"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/btn_default_holo_light"
+                    android:src="@drawable/de"/>
+            </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>
